@@ -5,7 +5,6 @@
  */
 int main(void)
 {
-system("echo 'and that piece of art is useful\" - Dora Korpar, 2015-10-19' >&2");
-return (0);
+fputs("and that piece of art is useful\" - Dora Korpar, 2015-10-19\n", stderr);
+return (1);
 }
-
