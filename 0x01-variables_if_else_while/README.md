@@ -10,38 +10,38 @@ This repository contains various C programs designed to introduce and practice f
 
 ## Contents
 
-1. **0-positive_or_negative.c**
+**0-positive_or_negative.c**
    - Prints whether a randomly generated number is positive or negative.
 
-2. **1-last_digit.c**
+**1-last_digit.c**
    - Prints the last digit of a random number and checks if it is greater than 5, zero, or less than 6 and not 0.
 
-3. **2-print_alphabet.c**
+**2-print_alphabet.c**
    - Prints the alphabet in lowercase using a loop.
 
-4. **3-print_alphabets.c**
+**3-print_alphabets.c**
    - Prints the alphabet in lowercase and then in uppercase using loops.
 
-5. **4-print_alphabt.c**
+**4-print_alphabt.c**
    - Prints the alphabet in lowercase, excluding 'q' and 'e'.
 
-6. **5-print_numbers.c**
+**5-print_numbers.c**
    - Prints single-digit numbers of base 10 starting from 0.
 
-7. **6-print_numberz.c**
+**6-print_numberz.c**
    - Prints single-digit numbers of base 10 using only `putchar`.
 
-8. **7-print_tebahpla.c**
+**7-print_tebahpla.c**
    - Prints the alphabet in reverse order in lowercase.
 
-9. **8-print_base16.c**
+**8-print_base16.c**
    - Prints all the numbers of base 16 in lowercase.
 
-10. **9-print_comb.c**
+**9-print_comb.c**
     - Prints all possible combinations of single-digit numbers.
 
-11. **10-print_comb2.c**
+**10-print_comb2.c**
     - Prints all possible combinations of two-digit numbers.
 
-12. **100-print_comb3.c**
+**100-print_comb3.c**
     - Prints all possible combinations of two-digit numbers without repeating digits.
