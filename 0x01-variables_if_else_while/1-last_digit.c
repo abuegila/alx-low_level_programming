@@ -3,7 +3,7 @@
 #include <time.h>
 /**
  * main-Determines last digit, and prints a message based on it.
- * Returns: 0
+ * Return: Always 0.
  */
 int main(void)
 {
