@@ -1,21 +1,60 @@
 #include <stdio.h>
 /**
- * main - printing the first 98 numbers of fabionaci series
+ * numLength - returns the value of the length of a number.
+ * @num: the number to be checked.
+ * Return: The length of the number
+ */
+int numLength(int num)
+{
+int length;
+length = 0;
+{
+if (!num)
+return (1);
+while (num)
+num = num / 10;
+{
+length += 1;
+}
+}
+return (length);
+}
+/**
+ * main - returns the value of the length of a number.
  * Return: Always 0
  */
-int main()
+int main(void)
 {
-unsigned long a = 1, b = 2, temp;
-int i;
+int count, initialos;
+unsigned long f1, f2, sum, mx, flo, f2o, sumo;
 
-printf("%lu, %lu", a, b);
-for (i = 3 ; i <= 98 ; i++)
+f1 = 1;
+f2 = 2;
+mx = 100000000;
+flo = 0;
+f2o = 0;
+sumo = 0;
+for (count = 1 ; count <= 98 ; count++)
 {
-temp = a + b;
-a = b;
-b = temp;
-printf(", %lu", b);
+if (flo > 0)
+printf("%lu", flo);
+initialos = numLength(mx) - numLength(f1);
+while (flo > 0 && initialos > 0)
+{
+printf("%d", 0);
+initialos--;
 }
+printf("%lu", f1);
+sum = (f1 + f2) % mx;
+sumo = flo + f2o + (f1 + f2) / mx;
+f1 = f2;
+flo = f2o;
+f2 = sum;
+f2o = sumo;
+if (count != 98)
+printf(", ");
+else
 printf("\n");
+}
 return (0);
 }
