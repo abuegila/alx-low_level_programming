@@ -19,15 +19,23 @@ if (value > 9)
 {
 last_digit = value % 10;
 value /= 10;
+_putchar(' ');
+_putchar(',');
 _putchar(value + '0');
 _putchar(last_digit + '0');
-_putchar(',');
-_putchar(' ');
+}
+else
+{
+if (value == 0)
+{
+_putchar(value + '0');
 continue;
 }
-_putchar(value + '0');
-_putchar(',');
 _putchar(' ');
+_putchar(' ');
+_putchar(',');
+_putchar(value + '0');
+}
 }
 _putchar('\n');
 }
