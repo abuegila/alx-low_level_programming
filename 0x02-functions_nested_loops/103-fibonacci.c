@@ -20,8 +20,8 @@ tmp = value;
 value += num;
 num = tmp;
 if (value % 2 == 0)
-sum+=value;
+sum += value;
 }
-printf("%lu, ", sum);
+printf("%lu", sum);
 return (0);
 }
