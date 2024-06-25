@@ -26,14 +26,12 @@ _putchar(last_digit + '0');
 }
 else
 {
-if (value == 0)
+if (j != 0)
 {
-_putchar(value + '0');
-continue;
-}
-_putchar(' ');
-_putchar(' ');
 _putchar(',');
+_putchar(' ');
+_putchar(' ');
+}
 _putchar(value + '0');
 }
 }
