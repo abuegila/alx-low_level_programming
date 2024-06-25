@@ -9,7 +9,7 @@ int i;
 long  num;
 long value;
 long tmp;
-unsigned long long sum;
+unsigned long sum;
 
 num = 0;
 value = 1;
