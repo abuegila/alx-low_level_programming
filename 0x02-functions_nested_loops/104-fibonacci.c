@@ -6,8 +6,10 @@
 int main(void)
 {
 unsigned long a = 1, b = 2, temp;
+int i;
+
 printf("%lu,%lu", a, b);
-for (int i = 3 ; i <= 98 ; i++)
+for (i = 3 ; i <= 98 ; i++)
 {
 temp = a + b;
 a = b;
