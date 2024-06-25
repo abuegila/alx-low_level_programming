@@ -19,8 +19,8 @@ if (value > 9)
 {
 last_digit = value % 10;
 value /= 10;
-_putchar(' ');
 _putchar(',');
+_putchar(' ');
 _putchar(value + '0');
 _putchar(last_digit + '0');
 }
