@@ -6,54 +6,30 @@
  */
 void print_times_table(int n)
 {
-int i;
-int j;
-int value;
-int last_digit;
-int last_last_digit;
-
-if (n < 15 || n > 10)
+int i, j, value;
+if (n >= 0 && n <= 15)
 {
-for (i = 0 ; i <= n ; i++)
+for (i = 0; i <= n; i++)
 {
-for (j = 0 ; j <= n ; j++)
+for (j = 0; j <= n; j++)
 {
 value = i * j;
-if (value < 10)
-{
 if (j != 0)
 {
 _putchar(',');
 _putchar(' ');
-_putchar(' ');
-_putchar(' ');
-_putchar(value + '0');
-}
-else
-_putchar(value + '0');
-}
+if (value < 10)
+_putchar(' '), _putchar(' '), _putchar(' ');
 else if (value < 100)
-{
-last_digit = value % 10;
-value /= 10;
-_putchar(',');
-_putchar(' ');
-_putchar(' ');
-_putchar(value + '0');
-_putchar(last_digit + '0');
-}
+_putchar(' '), _putchar(' ');
 else
-{
-last_digit = value % 10;
-value /= 10;
-last_last_digit = value % 10;
-value /= 10;
-_putchar(',');
 _putchar(' ');
-_putchar(value + '0');
-_putchar(last_last_digit + '0');
-_putchar(last_digit + '0');
 }
+if (value >= 100)
+_putchar(value / 100 + '0');
+if (value >= 10)
+_putchar((value / 10) % 10 + '0');
+_putchar(value % 10 + '0');
 }
 _putchar('\n');
 }
