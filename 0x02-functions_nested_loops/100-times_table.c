@@ -19,10 +19,8 @@ if (j != 0)
 _putchar(',');
 _putchar(' ');
 if (value < 10)
-_putchar(' '), _putchar(' '), _putchar(' ');
-else if (value < 100)
 _putchar(' '), _putchar(' ');
-else
+else if (value < 100)
 _putchar(' ');
 }
 if (value >= 100)
