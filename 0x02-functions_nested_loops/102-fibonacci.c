@@ -18,7 +18,7 @@ tmp = value;
 value += num;
 num = tmp;
 if (i == 50)
-printf("%lu", value);
+printf("%lu\n", value);
 else
 printf("%lu, ", value);
 }
