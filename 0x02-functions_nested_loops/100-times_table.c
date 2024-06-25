@@ -51,8 +51,8 @@ value /= 10;
 _putchar(',');
 _putchar(' ');
 _putchar(value + '0');
-_putchar(last_digit + '0');
 _putchar(last_last_digit + '0');
+_putchar(last_digit + '0');
 }
 }
 _putchar('\n');
