@@ -9,21 +9,19 @@ int i;
 long  num;
 long value;
 long tmp;
+unsigned long long sum;
 
 num = 0;
 value = 1;
+sum = 0;
 for (i = 1 ; i <= 32 ; i++)
 {
 tmp = value;
 value += num;
 num = tmp;
 if (value % 2 == 0)
-{
-if (value == 3524578)
-printf("%lu\n", value);
-else
-printf("%lu, ", value);
+sum+=value;
 }
-}
+printf("%lu, ", sum);
 return (0);
 }
