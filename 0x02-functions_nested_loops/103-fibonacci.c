@@ -22,6 +22,6 @@ num = tmp;
 if (value % 2 == 0)
 sum += value;
 }
-printf("%lu", sum);
+printf("%lu\n", sum);
 return (0);
 }
