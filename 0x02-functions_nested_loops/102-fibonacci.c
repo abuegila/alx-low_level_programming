@@ -1,4 +1,5 @@
 #include "main.h"
+#include <stdio>
 /**
  * main - printing the first 50 number of fabionaci series
  * Return: Always 0
