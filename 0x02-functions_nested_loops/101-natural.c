@@ -1,4 +1,5 @@
 #include "main.h"
+#include <stdio.h>
 /**
  * main - printing the multiples of 3 and 5 till 1024
  * Return: Always 0
