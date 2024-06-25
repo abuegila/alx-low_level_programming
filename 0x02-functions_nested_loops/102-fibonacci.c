@@ -7,9 +7,9 @@
 int main(void)
 {
 int i;
-int num;
-int value;
-int tmp;
+unsigned long num;
+unsigned long value;
+unsigned long tmp;
 
 num = 0;
 value = 1;
