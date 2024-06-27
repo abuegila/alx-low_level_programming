@@ -7,16 +7,20 @@
 void more_numbers(void)
 {
 int i;
-int j;
-char str[] = "1011121314";
+int num;
 
-for (i = 48 ; i < 58 ; i++)
+i = 10;
+num = 0;
+while (i--)
 {
-_putchar(i);
-}
-for (j = 0 ; str[j] ; j++)
+while (num < 15)
 {
-_putchar(str[j]);
+if (num > 9)
+_putchar('0' + num / 10);
+_putchar('0' + num % 10);
+num++;
 }
+num = 0;
 _putchar('\n');
+}
 }
