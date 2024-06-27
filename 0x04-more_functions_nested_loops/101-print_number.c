@@ -16,7 +16,7 @@ if (n < 0)
 _putchar('-');
 num = -n;
 }
-while (num / divisor >= 10)
+while ((num / divisor) >= 10)
 {
 divisor *= 10;
 }
