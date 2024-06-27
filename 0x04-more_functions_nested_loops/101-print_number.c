@@ -15,6 +15,11 @@ int f;
 int l;
 int nu;
 
+if (n == 0)
+{
+_putchar('0');
+return;
+}
 if (n < 0)
 {
 _putchar('-');
