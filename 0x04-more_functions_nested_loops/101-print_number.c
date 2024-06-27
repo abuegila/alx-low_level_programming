@@ -36,6 +36,6 @@ for (l = len ; l > j ; l--)
 nu /= 10;
 }
 f = nu % 10;
-printf("%d", f);
+_putchar(f + '0');
 }
 }
