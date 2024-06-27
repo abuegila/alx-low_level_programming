@@ -1,22 +1,23 @@
 #include <stdio.h>
 #include <stdbool.h>
 
-#define ll long long
-
 /**
  * isPrime - checking if the number is prime or not
  * @x: the number to be checked
  * Return: false if it's not a prime otherwise true
  */
-bool isPrime(ll x)
+bool isPrime(long int x)
 {
+long int k;
+
 if (x <= 1)
 {
 return (false);
 }
-for (ll i = 2 ; i * i <= x ; i++)
+
+for (k = 2 ; k * k <= x ; k++)
 {
-if (x % i == 0)
+if (x % k == 0)
 {
 return (false);
 }
@@ -29,7 +30,7 @@ return (true);
  * @b: the new result
  * Return: The value of the max
  */
-ll max(ll a, ll b)
+long int max(long int a, long int b)
 {
 return ((a > b) ? a : b);
 }
@@ -39,9 +40,10 @@ return ((a > b) ? a : b);
  */
 int main(void)
 {
-ll n;
-ll ans = 1;
-ll i
+long int n;
+long int ans = 1;
+long int i;
+
 n = 612852475143;
 for (i = 1 ; i * i <= n ; i++)
 {
@@ -57,6 +59,6 @@ ans = max(ans, n / i);
 }
 }
 }
-printf("%lld\n", ans);
+printf("%ld\n", ans);
 return (0);
 }
