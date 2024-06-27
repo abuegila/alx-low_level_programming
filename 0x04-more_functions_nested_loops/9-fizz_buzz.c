@@ -1,5 +1,4 @@
 #include <stdio.h>
-#include "main.h"
 /**
  * main - printing the number with fizz buzz trick
  * Return: Always 0
@@ -19,6 +18,7 @@ else if (i % 5 == 0)
 printf("Buzz");
 else
 printf("%d", i);
+if (i != 100)
 printf(" ");
 }
 printf("\n");
