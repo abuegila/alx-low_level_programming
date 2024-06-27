@@ -1,46 +1,29 @@
 #include "main.h"
 /**
- * print_number - printing an integer
+ * print_number - printing a number
  * @n: the number to be printed
  * Return: void
  */
-
 void print_number(int n)
 {
-int len;
-int i;
-int number;
-int j;
-int f;
-int l;
-int nu;
+int divisor;
+int num;
 
-if (n == 0)
-{
-_putchar('0');
-return;
-}
+num = n;
+divisor = 1;
 if (n < 0)
 {
 _putchar('-');
-n = (-n);
+num = -n;
 }
-len = 0;
-number = n;
-
-for (i = 0 ; number != 0 ; i++)
+while (num / divisor >= 10)
 {
-number /= 10;
-len++;
+divisor *= 10;
 }
-for (j = 1 ; j <= len ; j++)
+while (divisor > 0)
 {
-nu = n;
-for (l = len ; l > j ; l--)
-{
-nu /= 10;
-}
-f = nu % 10;
-_putchar(f + '0');
+_putchar((num / divisor) +'0');
+num %= divisor;
+divisor /= 10;
 }
 }
