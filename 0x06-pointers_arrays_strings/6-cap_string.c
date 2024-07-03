@@ -1,6 +1,7 @@
 #include "main.h"
+
 /**
- * cap_string - capatlizing all the string
+ * cap_string - capitalizing all words of a string
  * @n: the string to be processed
  * Return: a pointer to the string
  */
@@ -11,22 +12,22 @@ int i;
 i = 0;
 while (n[i] != '\0')
 {
-if (n[0] >= 97 && n[0] <= 122)
+if (i == 0 && n[i] >= 'a' && n[i] <= 'z')
 {
-n[0] = n[0] - 32;
+n[i] = n[i] - 32;
 }
-if (n[i - 1] == ' ' || n[i - 1] == ',' || n[i - 1] == ';' || 
+if (i > 0 && (n[i - 1] == ' ' || n[i - 1] == ',' || n[i - 1] == ';' || 
 n[i - 1] == '.' || n[i - 1] == '\t' || n[i - 1] == '\n' ||
 n[i - 1] == '!' || n[i - 1] == '?' || n[i - 1] == '"' ||
 n[i - 1] == '(' || n[i - 1] == ')' || n[i - 1] == '{' ||
-n[i - 1] == '}')
+n[i - 1] == '}'))
 {
-if (n[i] >= 97 && n[i] <= 122)
+if (n[i] >= 'a' && n[i] <= 'z')
 {
 n[i] -= 32;
 }
 }
-i++
+i++;
 }
 return (n);
 }
