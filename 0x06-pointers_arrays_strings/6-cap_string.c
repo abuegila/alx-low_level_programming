@@ -5,31 +5,31 @@
  * @n: the string to be processed
  * Return: a pointer to the string
  */
-char *cap_string(char *str)
+char *cap_string(char *n)
 {
 int i;
 
 i = 0;
-while (str[i])
+while (n[i])
 {
-while (!(str[i] >= 'a' && str[i] <= 'z'))
+while (!(n[i] >= 'a' && n[i] <= 'z'))
 i++;
-if (str[i - 1] == ' ' ||
-str[i - 1] == '\t' ||
-str[i - 1] == '\n' ||
-str[i - 1] == ',' ||
-str[i - 1] == ';' ||
-str[i - 1] == '.' ||
-str[i - 1] == '!' ||
-str[i - 1] == '?' ||
-str[i - 1] == '"' ||
-str[i - 1] == '(' ||
-str[i - 1] == ')' ||
-str[i - 1] == '{' ||
-str[i - 1] == '}' ||
+if (n[i - 1] == ' ' ||
+n[i - 1] == '\t' ||
+n[i - 1] == '\n' ||
+n[i - 1] == ',' ||
+n[i - 1] == ';' ||
+n[i - 1] == '.' ||
+n[i - 1] == '!' ||
+n[i - 1] == '?' ||
+n[i - 1] == '"' ||
+n[i - 1] == '(' ||
+n[i - 1] == ')' ||
+n[i - 1] == '{' ||
+n[i - 1] == '}' ||
 i == 0)
-str[i] -= 32;
+n[i] -= 32;
 i++;
 }
-return (str);
+return (n);
 }
