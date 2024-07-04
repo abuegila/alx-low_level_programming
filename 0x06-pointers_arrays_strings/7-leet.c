@@ -7,7 +7,7 @@
 char *leet(char *n)
 {
 char *ptr = n;
-    
+
 while (*ptr != '\0')
 {
 if (*ptr == 'a' || *ptr == 'A')
