@@ -6,21 +6,17 @@
  */
 char *leet(char *n)
 {
-char *ptr = n;
+char *fin = n;
+char st1[] = {'a', 'e', 'o', 't', 'l'};
+int st2[] = {4, 3, 0, 7, 1};
+unsigned int i;
 
-while (*ptr != '\0')
+while (*n)
 {
-if (*ptr == 'a' || *ptr == 'A')
-*ptr = '4';
-else if (*ptr == 'e' || *ptr == 'E')
-*ptr = '3';
-else if (*ptr == 'o' || *ptr == 'O')
-*ptr = '0';
-else if (*ptr == 't' || *ptr == 'T')
-*ptr = '7';
-else if (*ptr == 'l' || *ptr == 'L')
-*ptr = '1';
-ptr++;
+for (i = 0; i < 5; i++)
+if (*n == st1[i] || *n == st1[i] + 32)
+*n = 48 + st2[i];
+n++;
 }
-return (n);
+return (fin);
 }
