@@ -14,7 +14,7 @@ unsigned int i;
 while (*n)
 {
 for (i = 0; i < 5; i++)
-if (*n == st1[i] || *n == st1[i] + 32)
+if (*n == st1[i] || *n == st1[i] - 32)
 *n = 48 + st2[i];
 n++;
 }
