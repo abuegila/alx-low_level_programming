@@ -6,23 +6,24 @@
  */
 char *leet(char *n)
 {
-    char *current_char = n;
-    char original_letters[] = {'a', 'e', 'o', 't', 'l', 'A', 'E', 'O', 'T', 'L'};
-    char leet_equivalents[] = {'4', '3', '0', '7', '1', '4', '3', '0', '7', '1'};
-    int i;
+char *ptr = n;
+char leet_map[256] = {0};
 
-    while (*current_char != '\0')
-    {
-        for (i = 0; i < 10; i++)
-        {
-            if (*current_char == original_letters[i])
-            {
-                *current_char = leet_equivalents[i];
-                break;
-            }
-        }
-        current_char++;
-    }
-
-    return (n);
+leet_map['a'] = '4';
+leet_map['e'] = '3';
+leet_map['o'] = '0';
+leet_map['t'] = '7';
+leet_map['l'] = '1';
+leet_map['A'] = '4';
+leet_map['E'] = '3';
+leet_map['O'] = '0';
+leet_map['T'] = '7';
+leet_map['L'] = '1';
+while (*ptr != '\0')
+{
+if (leet_map[*ptr] != 0)
+*ptr = leet_map[*ptr];
+ptr++;
+}
+ return (n);
 }
