@@ -1,22 +1,22 @@
 #include "main.h"
 /**
- * leet - encoding the string to another
- * @n: the string to be processed
- * Return: a pointer to the string
+ * leet - function that encodes a string into 1337
+ * @str: the string to incode it
+ * Return: @str
  */
-char *leet(char *n)
+char *leet(char *str)
 {
-char *fin = n;
-char st1[] = {'a', 'e', 'o', 't', 'l'};
-int st2[] = {4, 3, 0, 7, 1};
-unsigned int i;
+	char *strp = str;
+	char key[] = {'A', 'E', 'O', 'T', 'L'};
+	int value[] = {4, 3, 0, 7, 1};
+	unsigned int i;
 
-while (*n)
-{
-for (i = 0; i < 5; i++)
-if (*n == st1[i] || *n == st1[i] - 32)
-*n = 48 + st2[i];
-n++;
-}
-return (fin);
+	while (*str)
+	{
+		for (i = 0; i < 5; i++)
+			if (*str == key[i] || *str == key[i] + 32)
+				*str = 48 + value[i];
+		str++;
+	}
+	return (strp);
 }
