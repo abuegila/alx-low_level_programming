@@ -4,8 +4,6 @@
  * @n: the string to be processed
  * Return: a pointer to the string
  */
-#include "main.h"
-
 char *leet(char *n)
 {
     char *current_char = n;
