@@ -5,7 +5,6 @@
  * @str: string to be encoded
  * Return: a pointer to the string
  */
-
 char *leet(char *str)
 {
 char *ptr = str;
