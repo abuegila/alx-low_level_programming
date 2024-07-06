@@ -5,7 +5,6 @@ This repository contains projects and exercises related to low-level programming
 
 ## Repository Structure
 The repository is organized into directories, each corresponding to a specific project or exercise. Here is an overview of the structure:
-
 - `0x00-hello_world`: Introduction to C programming, basic syntax, and compiling simple programs.
 - `0x01-variables_if_else_while`: Focuses on foundational concepts in C programming related to variables, if-else statements, and while loops.
 
