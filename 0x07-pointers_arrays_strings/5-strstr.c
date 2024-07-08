@@ -1,27 +1,29 @@
 #include "main.h"
-#include <stdio.h>
 
 /**
- * _strpbrk - returning the result of the process
- * @s: a pointer to the string
- * @accept: a pointer to the needed index
- * Return: the position of the first occurance of NULL
+ * _strstr - function to locate a substring
+ * @haystack: pointer to the main string
+ * @needle: pointer to the substring
+ * Return: pointer to the beginning of the located substring, or NULL if not found
  */
+char *_strstr(char *haystack, char *needle)
+{
+char *result;
+char *fneedle;
 
-char *_strpbrk(char *s, char *accept)
+for (result = haystack; *result != '\0'; result++)
 {
-int i;
-
-while (*s)
+for (fneedle = needle; *fneedle != '\0'; fneedle++)
 {
-for (i = 0; accept[i]; i++)
+if (*(result + (fneedle - needle)) != *fneedle)
 {
-if (*s == accept[i])
-{
-return (s);
+break;
 }
 }
-s++;
+if (*fneedle == '\0')
+{
+return (result);
+}
 }
 return (NULL);
 }
