@@ -1,20 +1,25 @@
 #include "main.h"
-#include <stdio.h>
-#include <stddef.h>
+
 /**
- * _strchr - getting the substring starting from  c
- * @s: the string to be checked
- * @c: the character to search for
- * Return: a pointer to the first occurance
- */
+ * _strchr - returning a pointer to the new element
+ * @s: the pointer to the character
+ * @c: the char to search for
+ * Return: A pointer to the new occurance
+*/
 
 char *_strchr(char *s, char c)
 {
-for (;;)
+while (*s != '\0')
 {
 if (*s == c)
+{
 return (s);
+}
 s++;
 }
-return (NULL);
+if (*s == c)
+{
+return (s);
+}
+return (0);
 }
