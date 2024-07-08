@@ -4,7 +4,7 @@
  * _strstr - function to locate a substring
  * @haystack: pointer to the main string
  * @needle: pointer to the substring
- * Return: pointer to the beginning of the located substring, or NULL if not found
+ * Return: pointer to the beginning of the located substring
  */
 char *_strstr(char *haystack, char *needle)
 {
