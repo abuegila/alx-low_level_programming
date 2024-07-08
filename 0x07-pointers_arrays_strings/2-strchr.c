@@ -1,5 +1,6 @@
 #include "main.h"
 #include <stdio.h>
+#include <stddef.h>
 /**
  * _strchr - getting the substring starting from  c
  * @s: the string to be checked
