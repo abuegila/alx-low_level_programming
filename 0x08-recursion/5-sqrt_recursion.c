@@ -1,5 +1,5 @@
 #include "main.h"
-_sqrt_recursion(int n);
+int _sqrt_recursion(int n);
 /**
  * check_n - getting the number
  * @n: the number to be checker
