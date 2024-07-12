@@ -13,7 +13,7 @@ int i, j, multiplication;
 i = atoi(argv[1]);
 j = atoi(argv[2]);
 multiplication = i *j;
-if (argc == 2)
+if (argc <= 2)
 printf("%d\n", multiplication);
 else
 {
