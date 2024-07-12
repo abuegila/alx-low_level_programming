@@ -1,4 +1,5 @@
 #include <stdio.h>
+#include <stdlib.h>
 /**
  * main - multplying 2 nums
  * @argc: the numbers
@@ -7,11 +8,16 @@
  */
 int main(int argc, char const *argv[])
 {
+int i, j;
+
+i = atoi(argv[1]);
+j = atoi(argv[2]);
+
 if (argc == 2)
-printf("%d", argv[1] * argv[2]);
+printf("%d\n", i *j);
 else
 {
-printf("Error");
+printf("Error\n");
 return (1);
 }
 return (0);
