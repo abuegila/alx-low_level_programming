@@ -10,14 +10,14 @@ int main(int argc, char const *argv[])
 {
 int i, j, multiplication;
 
-i = atoi(argv[1]);
-j = atoi(argv[2]);
-multiplication = i *j;
 if (argc <= 2)
 {
 printf("Error\n");
 return (1);
 }
+i = atoi(argv[1]);
+j = atoi(argv[2]);
+multiplication = i *j;
 printf("%d\n", multiplication);
 return (0);
 }
