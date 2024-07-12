@@ -8,13 +8,13 @@
  */
 int main(int argc, char const *argv[])
 {
-int i, j;
+int i, j, multiplication;
 
 i = atoi(argv[1]);
 j = atoi(argv[2]);
-
+multiplication = i *j;
 if (argc == 2)
-printf("%d\n", i *j);
+printf("%d\n", multiplication);
 else
 {
 printf("Error\n");
