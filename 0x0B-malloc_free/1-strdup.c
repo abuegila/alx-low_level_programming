@@ -18,7 +18,7 @@ length++;
 cp = malloc(sizeof(char) * (length + 1));
 if (cp == NULL)
 return (NULL);
-for (i = 0; str[i]; ++)
+for (i = 0; str[i]; i++)
 {
 cp[i] = str[i];
 }
