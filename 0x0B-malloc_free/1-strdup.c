@@ -16,7 +16,7 @@ return (NULL);
 for (i = 0; str[i]; i++)
 length++;
 cp = malloc(sizeof(char) * (length + 1));
-if (cpy == NULL)
+if (cp == NULL)
 return (NULL);
 for (i = 0; str[i]; ++)
 {
