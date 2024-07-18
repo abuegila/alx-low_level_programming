@@ -1,6 +1,5 @@
-#include <stdio.h>
 #include <stdlib.h>
-#include <limits.h>
+#include <stdio.h>
 #include "main.h"
 /**
  * malloc_checked - allocating memory in heap
@@ -13,6 +12,9 @@ void *ptr;
 
 ptr = malloc(b);
 if (ptr == NULL)
+{
+free(ptr)
 exit(98);
+}
 return (ptr);
 }
