@@ -4,12 +4,10 @@
  * @separator: the string to be printed
  * @n:The number of args
  */
-
 void print_numbers(const char *separator, const unsigned int n, ...)
 {
 unsigned int i;
 va_list ss;
-
 va_start(ss, n);
 
 for (i = 0; i < n; i++)
