@@ -1,4 +1,4 @@
-#include <stdarg.h>
+#include "variadic_functions.h"
 /**
  * sum_them_all - getting the sum of pars
  * @n: the number of args
