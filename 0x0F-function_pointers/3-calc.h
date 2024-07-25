@@ -9,7 +9,10 @@ typedef struct op
 {
 char *op;
 int (*f)(int a, int b);
+<<<<<<< HEAD
 
+=======
+>>>>>>> origin/master
 }
 op_t;
 
