@@ -12,7 +12,7 @@ va_list ss;
 
 va_start(ss, n);
 
-for (int i = 0; i < n; i++)
+for (i = 0; i < n; i++)
 {
 if (!separator)
 printf("%d", va_arg(list, int));
