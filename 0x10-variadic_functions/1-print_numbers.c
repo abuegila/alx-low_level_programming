@@ -13,9 +13,9 @@ va_start(ss, n);
 for (i = 0; i < n; i++)
 {
 if (!separator)
-printf("%d", va_arg(list, int));
+printf("%d", va_arg(ss, int));
 else if (separator && !i)
-printf("%d", va_arg(ss, int);
+printf("%d", va_arg(ss, int));
 else
 printf("%s%d", separator, va_arg(ss, int));
 }
